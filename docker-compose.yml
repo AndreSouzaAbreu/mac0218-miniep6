@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: ./
+    container_name: $CONTAINER_NAME
+    image: $IMG_NAME
+    ports:
+      - $PORT:80
+    volumes:
+      - $FILES:/usr/src/pages:ro
