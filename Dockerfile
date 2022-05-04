@@ -1,6 +1,6 @@
 FROM caddy
 
-COPY ./website /usr/src/pages
+RUN mkdir -p /usr/src/pages
 COPY ./config/Caddyfile /etc/caddy/Caddyfile
 
 EXPOSE 80
